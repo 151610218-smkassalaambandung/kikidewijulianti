@@ -23,5 +23,14 @@ route::get('testmodel', function (){
 	return $q."</br></br>".$a."</br></br>".$b."</br></br>".$c;
 });
 
+route::get('/test','Mycontroller@percobaan');
+route::get('/test2','Mycontroller@percobaan2');
+route::get('/test3','Mycontroller@percobaan3');
+route::get('/test4','Mycontroller@percobaan4');
+route::get('/test5','Mycontroller@percobaan5');
+route::get('/test6','Mycontroller@percobaan6');
+route::get('/test7','Mycontroller@percobaan7');
+
+
 
 
