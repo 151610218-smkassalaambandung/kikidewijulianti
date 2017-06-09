@@ -45,21 +45,20 @@ class Mycontroller extends Controller
     $buah = ['Mangga','Jeruk','Apel','Anggur','manggis'];
     return view('latihan.buah', compact('buah'));
    }
-   public function percobaan7()
+   public function param($data,$data2)
    {
-    $buah = ['Mangga','Jeruk','Apel','Anggur'];
+     $id = 'persia';
+     $baek=['buah'=>['anggur', 'mangga', 'apel','semangka','salak'],
+           'mhidup' => ['manusia','tumbuhan','cicak','ayam','kucing'],
+           'kucing' =>['anggora','persia'],
+           'komp' => ['lenovo', 'asus', 'samsung', 'advan','tv']];
+
+  $tugas =$baek[$data];
+  $tugas =$baek[$data2];
+
+  return view('tugas', compact('tugas','data'));
+   }
+
+}  
     
-    $mhidup = ['tumbuhan','hewan','manusia','kucing','ayam'];
    
-
-    $komp = ['hardist','prossesor','monitor','keyboard','cvu'];
-    return view('latihan.tugas', compact('buah','mhidup','komp'));
-   }
-
-   public function param($buah)
-   {
-    $buah;
-
-    return ($buah);
-   }
-}

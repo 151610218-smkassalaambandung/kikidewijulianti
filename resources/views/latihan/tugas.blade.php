@@ -2,26 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Looping</title>
+    <title>parameter</title>
 </head>
 <body>
 <br>
-   @foreach($buah as $data)
-    {{$data}}<hr>
-    @endforeach
-    </br>
-    <br>
+   <td> Daftar : <b>{{$data}} {{$data2}} </br>
+   @foreach($query as $key)
 
-    @foreach($mhidup as $data)
-    {{$data}}<hr>
-    @endforeach
-    </br>
-    <br>
-
-    @foreach($komp as $data)
-    {{$data}}<hr>
-    @endforeach
-    </br>
-
+   <ul>
+   <li>{{$key}}</li>
+   </ul>
+   @endforeach
 </body>
 </html>
